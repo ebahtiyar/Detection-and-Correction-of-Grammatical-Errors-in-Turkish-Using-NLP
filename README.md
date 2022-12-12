@@ -22,6 +22,7 @@ The dictionary is composed of 3 million sentences collected.
 While collecting the sentences, packages such as Selenium and BeautifulSoup were used. Stored using SQLite3
 
 For more detailed information, you can access the project report from the link below.
+
 https://docs.google.com/document/u/0/d/1oi831nig5W-wDC6lKFIczQmA6bqnYWCU/mobilebasic
 
 Images from the project are here
