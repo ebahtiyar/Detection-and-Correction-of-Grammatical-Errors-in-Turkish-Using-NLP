@@ -4,15 +4,15 @@ In this project, grammatical errors in Turkish are detected and corrected using 
 
 The grammatical errors that can be detected are:
 
-Errors due to lack of punctuation marks
+*Errors due to lack of punctuation marks
 
-Errors due to suffix or conjunction in da/de/ki
+*Errors due to suffix or conjunction in da/de/ki
 
-Errors caused by the writing of case suffixes
+*Errors caused by the writing of case suffixes
 
-Character based errors
+*Character based errors
 
-In addition, it can suggest Turkish origin words instead of foreign origin words.
+*In addition, it can suggest Turkish origin words instead of foreign origin words.
 
 4 different models and a large root dictionary are the basis of this project.
 Approximately 3 million sentences trained in these models were collected from news sites to consist of up-to-date words. These sentences were parsed according to certain requirements (such as rooting words, separation from numbers) and the models were trained.
@@ -42,6 +42,8 @@ Use of:
 1) Download all the model and side files from the google driver link above
 2) Edit the model and dictionary paths in the code according to your own computer
 3) Run the website by typing python run manage.py in the terminal. That is all :)
+
+You can reach me about the project from anywhere.
  
 
 
