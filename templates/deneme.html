@@ -1,0 +1,19 @@
+<script type="text/javascript" src="jquery-1.6.3.min.js"></script>
+<script>
+$(document).ready(function(){
+    words = [];
+    $("#myId").bind("mouseup",function(){
+        word = window.getSelection().toString();
+        if(word != ''){
+            if( confirm("Add *"+word+"* to array?") ){words.push(word);}
+        }
+    });
+    //just to see what we've got
+    $('button').click(function(){alert(words);});
+});
+</script>
+
+<div id='myId'>
+    Some random text in here with many words huh
+</div>
+<button>See content</button>

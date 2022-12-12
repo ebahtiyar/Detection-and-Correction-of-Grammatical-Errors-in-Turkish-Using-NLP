@@ -1,0 +1,107 @@
+  {% extends 'layout.html' %}
+
+{% block body %}
+
+<style>
+h1 {
+
+  margin-left: 400px;
+  font-style: italic;
+  }
+
+  body {
+    background-image: url("https://i.pinimg.com/originals/a6/1a/b6/a61ab69461c264dac81d3a12dfebd9ac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+</style>
+
+<div class = "cols">  
+    <h1>Türkçe Denetim</h1>
+    <hr>
+    <p id="demo"></p>
+    <div class = "col-md-57 offset-md-2">
+        <form method = "post">
+            {% csrf_token %}
+            
+            
+            <p id="form"> {{form.as_p}}</p>
+            
+            <br>
+            <div class="col-md-9   text-center">
+            <button type = "submit"  onclick="myFunction()" class = "btn btn-primary center-block" > Denetle </button>
+            </div>
+            <br>
+            
+            <body>
+              <blockquote>
+               <h4 style = "font-style: italic";>Denetim Sonucu </h4>
+               <hr>
+              {% for ww,lbl in words %}
+                 
+                 {% if lbl == "1" %}
+                 <span id = {{forloop.counter}} class = {{forloop.counter}} style="background-color: #FFFF00">{{ww}}</span>
+                   {% for s in sugg%}
+                      
+                   <script type="text/javascript">
+                    $(function() {
+                    $.contextMenu({ 
+                        selector: "."+ "{{forloop.counter}}", 
+                        callback: function(key, options) {
+                            var m = key;
+                            $('#{{forloop.counter}}').html(key);
+                        },
+                        items: {
+                          "{{s.0}}": {name: "{{s.0}}"},
+                          "{{s.1}}": {name: "{{s.1}}"},
+                          "{{s.2}}": {name: "{{s.2}}"},
+                          "{{s.3}}": {name: "{{s.3}}"},
+                          "{{s.4}}": {name: "{{s.4}}"},
+                          "{{s.5}}": {name: "{{s.5}}"},
+                          
+                        }
+                    });   
+                    });
+            </script>
+
+
+                   
+                   {% endfor %}
+                 
+                 {% else %}
+                  {{ww}}
+                 {% endif %}
+         
+              
+              {% endfor %}
+     
+              <br><br>
+              <h5 style = "font-style: italic";> Uyarılar </h5>
+              <hr>
+                        {% for t in turkish %}
+                          
+                          <li> {{t}} </li> 
+                         
+                        
+                        {% endfor %}
+                        </blockquote>
+            </body>
+            <script>
+              function myFunction() {
+                document.getElementById("form").innerHTML = "Denetleniyor...";
+              }
+              </script>
+            
+          </form>
+
+    </div>
+</div>
+{% endblock body %}
+
+
+
+
+

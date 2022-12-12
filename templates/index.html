@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+
+
+{% block body %}
+
+<div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Merhaba,</h1>
+      <p>Yapay zeka algoritmalarını kullanarak Türkçedeki yazım hataları tespit edip düzeltmeye çalışıyoruz. Ayrıca yabancı kökenli kelime yerine türkçe kökenli kelime önerebiliyoruz. Şu anda düzeltebildiğimiz hatalar:</p>
+      <ul>
+        <li>Noktalama İşaretleri</li>
+        <li>de/da/ki Bağlacının Yazımı </li>
+        <li>Hal Eklerinin Yanlış Kullanılmasından Kaynaklanan Hatalar </li>
+        <li>Karakter Bazlı Hatalar </li>
+      </ul>
+      <p><a class="btn btn-primary btn-lg" href="/norm#" role="button">Denetlemeye Başla</a></p>
+    </div>
+  </div>
+{% endblock body %}
+
