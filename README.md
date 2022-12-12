@@ -36,9 +36,11 @@ Images from the project are here
 ![ss_3](https://user-images.githubusercontent.com/46243758/207122249-758585a0-9cdb-4067-87ac-d397a0c12b1d.png)
 
 Project Prensentation Video:
+
 https://www.youtube.com/watch?v=UOAqi54JK_8&ab_channel=EmreBahtiyar
 
 Project Models and Dictionary Driver Link:
+
 https://drive.google.com/drive/folders/16rH72NwdoqrRBjzT8e3o4L6uPrBA9pqw?usp=share_link
 
 Use of:
