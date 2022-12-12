@@ -5,8 +5,11 @@ In this project, grammatical errors in Turkish are detected and corrected using 
 The grammatical errors that can be detected are:
 
 Errors due to lack of punctuation marks
-Errors due to suffix or conjunction in /da/
+
+Errors due to suffix or conjunction in da/de/ki
+
 Errors caused by the writing of case suffixes
+
 Character based errors
 
 In addition, it can suggest Turkish origin words instead of foreign origin words.
