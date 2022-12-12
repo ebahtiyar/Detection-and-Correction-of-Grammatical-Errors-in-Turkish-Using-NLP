@@ -44,9 +44,10 @@ Project Models and Dictionary Driver Link:
 https://drive.google.com/drive/folders/16rH72NwdoqrRBjzT8e3o4L6uPrBA9pqw?usp=share_link
 
 Use of:
-1) Download all the model and side files from the google driver link above
+1) Download this repository, also all the model and side files from the google driver link above
 2) Edit the model and dictionary paths in the code according to your own computer
 3) Run the website by typing python run manage.py in the terminal. 
+
 That is all :)
 
 You can reach me about the project from anywhere.
