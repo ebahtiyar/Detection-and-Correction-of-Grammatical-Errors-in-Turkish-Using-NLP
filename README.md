@@ -2,6 +2,8 @@
 
 In this project, grammatical errors in Turkish are detected and corrected using NLP techniques and traditional algorithms. Trained models and algorithms have been turned into a website to be user-friendly. The website is also built using the Django Framework.
 
+This project is a TÜBİTAK-2209-A supported project.
+
 The grammatical errors that can be detected are:
 
 -Errors due to lack of punctuation marks
