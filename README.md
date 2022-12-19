@@ -1,4 +1,4 @@
-# Detection and Correction of Grammatical Errors in Turkish Using NLP techniques
+# Detection and Correction of Grammatical Errors in Turkish Using NLP Techniques
 
 In this project, grammatical errors in Turkish are detected and corrected using NLP techniques and traditional algorithms. Trained models and algorithms have been turned into a website to be user-friendly. The website is also built using the Django Framework.
 
